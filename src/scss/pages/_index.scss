@@ -18,4 +18,29 @@
             }
         }
     }
+
+    .hero-banner {
+        background-image: url('../assets/hero-banner.jpg');
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;
+        height: 700px;
+        position: relative;
+        z-index: -1;
+    }
+
+    .hero-banner-feature {
+        position:absolute;
+        top: 120px;
+        right: 20%;
+        width: 300px;
+        height: 400px;
+        background-color: white;
+        z-index: 100;
+    }
+
+    .index-main-max-width {
+        max-width: 1170px;
+        margin: 0 auto;
+    }
 }

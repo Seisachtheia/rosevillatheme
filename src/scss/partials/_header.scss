@@ -1,5 +1,5 @@
 header {
-    $header-height-desktop: 80px;
+    $header-height-desktop: 120px;
     $header-height-mobile: 60px;
 
     position: relative;
@@ -13,6 +13,7 @@ header {
 
     .content-max-width {
         height: 100%;
+        max-width: 1170px;
     }
 
     .menu-items {
@@ -28,13 +29,19 @@ header {
         li {
             display: inline-block;
             line-height: $header-height-desktop;
-            padding-left: 20px;
+            padding: 0 20px;
+            border-right: 1px solid #dee0e1; 
         }
 
         a {
             display: block;
             color: #333;
             letter-spacing: 0.5px;
+        }
+
+        .last {
+            border: none;
+            text-align: right;
         }
     }
 
@@ -55,14 +62,58 @@ header {
     .logo {
         position: absolute;
         left: 0;
-        top: 5px;
+        top: 35px;
         bottom: 5px;
-        width: 150px;
+        width: 179px;
+        height: 49px;
         @include bg(contain);
         background-position: center left ;
 
         @media(max-width: $desktop){
             left: 3%;
+        }
+    }
+
+    .navi-bar {
+        max-width: 1140px;
+        margin: 0 auto;
+        height: 60px;
+        background-color: rgb(88, 103, 195);
+        border-radius: 4px;
+    }
+
+    .navi-items {
+        display: inline-block;
+        padding: 0 10px;
+    
+        .item {
+            display:inline-block;
+            font-size: 18px;
+            color: #fff;
+            font-weight: 500;
+            line-height: 60px;
+            padding: 0 15px;
+        }
+    }
+
+    .phone-contact {
+        display: inline-block;
+        font-size: 18px;
+        color: #fff;
+        font-weight: 500;
+        padding-left: 25px;
+
+        .phone-icon {
+            display: inline-block;
+            height: 24px;
+            width: 24px;
+            line-height: 60px;
+            vertical-align: middle;
+        }
+
+        span {
+            padding-left: 10px;
+            color: #fff;
         }
     }
 }
